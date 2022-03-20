@@ -1,0 +1,51 @@
+.rules {
+    padding-top: 3rem;
+    text-align: center;
+    
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(129,129,129,0.2);
+}
+.features {
+    text-align: left;
+    padding: 0 10px;
+    @include e(item) {
+padding: 20px 10px;
+
+display: grid;
+grid-gap: 20px;
+grid-template-columns: 0.3fr 1fr;
+justify-content: start;
+    }
+
+    @include e(number) {
+        grid-column: 1;
+        grid-row: 1 / span 3;
+        color: $price;
+        @include fontSize(52px);
+        margin: 0;
+        justify-self: end;
+
+    }
+    @include e(title) {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $featureTitle;
+        font-weight: 600;
+    }
+    @include e(text) {
+        margin: 0;
+        padding: 0;
+        color: $featureParagraph;
+        line-height: 22px;
+        font-size: 14px;
+    }
+    @include e(link) {
+        color: $notBlackFooter;
+        text-transform: uppercase;
+        border-bottom: 2px solid $price;
+
+    }
+}
+

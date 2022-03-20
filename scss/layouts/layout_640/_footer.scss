@@ -1,0 +1,32 @@
+.footer {
+    @include e(menu) {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "adress 10px posts"
+        "menu1 menu2 menu3 "
+        ;
+    }
+    @include e(submenu) {
+        &:first-of-type {
+            grid-area: adress;
+            max-width: 350px;
+        }
+        &:nth-of-type(2) {
+            grid-area: posts;
+        }
+        &:nth-of-type(3) {
+            grid-area: menu1;
+        }
+        &:nth-of-type(4) {
+            grid-area: menu2;
+        }
+        &:last-of-type {
+            grid-area: menu3;
+            justify-self: end;
+        }
+    }
+    @include e(logo) {
+        width: 100%;
+    }
+}

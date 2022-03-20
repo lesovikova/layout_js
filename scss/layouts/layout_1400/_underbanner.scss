@@ -1,0 +1,30 @@
+.underbanner  {
+    @include e(section) {
+        padding: rem(65px) 0;
+    }
+    @include e(title) {
+        font-size: rem(36px);
+    }
+    @include e(text) {
+        font-size: rem(14px);
+    }
+    @include e(link) {
+        font-size: rem(13px);
+    }
+
+    @include e(half-section) {
+        width: 49%;
+        
+    }
+}
+
+@media (min-width: 1600px) {
+    .underbanner  {
+        @include e(section) {
+            // padding: 8rem 35px;
+        }
+        @include e(title) {
+            font-size: rem(43px);
+        }
+}
+}

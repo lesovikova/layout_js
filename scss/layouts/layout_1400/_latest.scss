@@ -1,0 +1,23 @@
+.latest {
+    max-width: 1400px;
+    min-width: fit-content;
+    
+    @include e(gallery) {
+        
+    grid-template-columns:  repeat(3, minmax(220px, 320px)) ;
+    }
+
+}
+.headers {
+    @include e(top) {
+      font-size: 14px;
+    }
+    @include e(main) {
+      // font-size: 36px;
+      margin: 0;
+    }
+    @include e(bottom) {
+        font-size: 16px;
+    }
+  }
+  

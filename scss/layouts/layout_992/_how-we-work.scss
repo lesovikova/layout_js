@@ -1,0 +1,40 @@
+.rules {
+    margin-top: 30px;
+
+    @include e(features) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: auto;
+    }
+}
+
+.features {
+    padding-bottom: 20px;
+    margin-top: 25px;
+    position: relative;
+    @include e(item) {
+        padding: 20px 40px;
+        &::after {
+            position: absolute;
+            content: "";
+            height: 100px;
+            width: 0;
+            margin: 0;
+            padding: 0;
+            border-left: 1px solid rgba(129,129,129,0.2);
+        }
+        &:first-of-type::after {
+            display: none;
+        }
+    }
+
+    @include e(number) {
+        align-self: start;
+        grid-row: 1 / span 2;
+
+    }
+    @include e(link) {
+        display: none;
+    }
+}

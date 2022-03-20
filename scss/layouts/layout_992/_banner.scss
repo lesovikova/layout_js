@@ -1,0 +1,41 @@
+.banner {
+    @include e(button) {
+        position: absolute;
+        color: $white;
+        background-color: $black;
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+        opacity: 50%;
+        @include m(left) {
+          top: 50%;
+          left: 0;
+        }
+        @include m(right) {
+          top: 50%;
+          right: 0;
+        }
+      }
+      @include e(header) {
+        
+      font-size: 180px;
+      }
+      @include e(paragraph) {
+        font-size: 1rem;
+        line-height: 23px;
+        max-width: 62%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @include e(text) {
+        max-width: 50%;
+        margin: auto;
+      }
+}
+.actions {
+  @include e(button) {
+    
+    font-size: 13px;
+    padding: 0.7rem 2rem;
+  }
+}

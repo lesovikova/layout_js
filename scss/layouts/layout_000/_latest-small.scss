@@ -1,0 +1,15 @@
+.latest-small {
+    padding-top: 3rem;
+    text-align: center;
+    @include e(gallery) {
+    display: grid;
+    grid-gap: 5px;
+    justify-content: center;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 0;
+      }
+    grid-template-columns: repeat(6, minmax(180px, 350px) );
+    text-align: center;
+    }
+}

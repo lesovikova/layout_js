@@ -1,0 +1,7 @@
+.latest-small {
+    
+    @include e(gallery) {
+        width: 100%;
+        margin: auto;
+    }
+}

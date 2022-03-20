@@ -1,0 +1,22 @@
+.underbanner  {
+    grid-template-columns: repeat(3, minmax(310px, 1fr));
+
+    @include e(title) {
+        font-size: rem(22px);
+    }
+    @include e(text) {
+        font-size: rem(14px);
+    }
+    @include e(link) {
+        font-size: rem(13px);
+    }
+    @include e(section) {
+        padding: 10px 0;
+        height: 29vw;
+
+    }
+    @include e(half-section) {
+        width: 50%;
+        margin: 1em;
+    }
+}

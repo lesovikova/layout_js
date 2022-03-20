@@ -1,0 +1,5 @@
+.instagram {
+    @include e(items) {
+        grid-template-columns: repeat(8, 25%);
+    }
+}

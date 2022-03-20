@@ -1,0 +1,17 @@
+.underbanner  {
+    @include e(section) {
+        text-align: center;
+        padding: 25px 0;
+        height: auto;
+        background-size: cover;
+    }
+    @include e(title) {
+        font-size: rem(32px);
+    }
+    @include e(text) {
+        font-size: rem(14px);
+    }
+    @include e(link) {
+        font-size: rem(13px);
+    }
+}

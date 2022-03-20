@@ -1,0 +1,58 @@
+.underbanner {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(370px, 1fr));
+    padding: 5px;
+    grid-gap: 5px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 0;
+      }
+    @include e(section) {
+        padding: 50px 0;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        @include m(first) {
+            background: url(../../../img/underbanner/cat-colored-fashion-7.jpg.webp) no-repeat;
+            background-size: cover;
+        }
+        @include m(second) {
+            background: url(../../../img/underbanner/cat-colored-fashion-14.jpg.webp) no-repeat;
+            background-size: cover;
+        }
+        @include m(third) {
+            background: url(../../../img/underbanner/cat-colored-fashion-10.jpg.webp) no-repeat;
+            background-size: cover;
+        }
+    }
+    @include e(half-section) {
+        width: 45%;
+        margin-left: 30px;
+    }
+    @include e(title) {
+        font-size: rem(19px);
+        text-transform: uppercase;
+        margin: 0;
+    }
+@include e(text) {
+    font-size: rem(14px);
+    line-height: 1.5rem;
+}
+@include e(link) {
+    font-size: 12px;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+    color: $white;
+}
+}
+@media (min-width: 500px) {
+    .underbanner {
+        @include e(section) {
+            background-size: contain;
+        }
+
+    }
+}

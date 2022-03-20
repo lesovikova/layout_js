@@ -1,0 +1,8 @@
+.latest-small {
+    
+    width: 1300px;
+    margin: auto;
+    @include e(gallery) {
+        margin: auto;
+    }
+}

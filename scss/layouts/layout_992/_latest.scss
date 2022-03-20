@@ -1,0 +1,17 @@
+.latest {
+    width: 70%;
+    margin: 3rem auto;
+    @include e(gallery) {
+        
+    grid-template-columns: repeat(3, minmax(220px, 320px));
+    
+    width: 70%;
+    margin: auto;
+    }
+}
+.headers {
+    
+    @include e(main) {
+        line-height: 2.5rem;
+    }
+  }

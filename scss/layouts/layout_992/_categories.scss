@@ -1,0 +1,19 @@
+.categories {
+    @include e(item) {
+    position: relative;
+    }
+    @include e(more) {
+        display: none;
+    }
+    @include e(figcaption) {
+position: absolute;
+top: 42%;
+left: 0;
+right: 0;
+    }
+    @include e(title) {
+        font-size: 20px;
+        font-weight: 500;
+        color: $white;
+    }
+}

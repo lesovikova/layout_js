@@ -1,0 +1,21 @@
+.headers {
+  @include e(top) {
+    font-size: 14px;
+  }
+  @include e(main) {
+    // font-size: 22px;
+  }
+  @include e(bottom) {
+  }
+}
+
+.description {
+  @include e(name) {
+    font-size: 14px;
+  }
+  @include e(collection) {
+    font-size: 13.3px;
+  }
+  @include e(price) {
+  }
+}

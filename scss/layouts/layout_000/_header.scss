@@ -1,0 +1,99 @@
+.header {
+    position: sticky; 
+    z-index: 6;
+    top: 0;
+    display: grid;
+    grid-template-columns: fit-content 1fr fit-content;
+    width: auto;
+    
+    color: $white;
+    font-size: 13px;
+    padding: 1rem;
+    justify-items: center;
+    background-color:$headerBgd;
+    margin-bottom: -80px;
+
+    @include e(tools) {
+        
+        grid-column: 1;
+        width: auto;
+        
+    }
+    @include e(shop) {
+        align-self: center;
+        grid-column: 3;
+        width: fit-content;
+       
+    }
+
+    @include e(logo) {
+        
+    width: 120px;
+    grid-column: 2;
+    align-self: center;
+    grid-row: 1;
+    z-index: 6;
+    
+}
+@include e(logo-image) {
+    @include img-fluid
+}
+@include e(menu) {
+    display: none;
+    grid-row: 1;
+grid-column: 4 / span 4;
+}
+}
+.menu {
+    padding: 0;
+    z-index: 0;
+display: grid;
+grid-template-columns: auto repeat(3, min-content) 220px repeat(3, min-content) auto;
+column-gap: 20px;
+align-items: center;
+height: 100%;
+
+@include e(item) {
+&:first-of-type {
+    grid-column: 2;
+}
+&:nth-of-type(4) {
+    grid-column: 6;
+}
+} 
+@include e(link) {
+    text-transform: uppercase;
+    font-size: 13;
+    font-weight: 600;
+    color: $white;
+}
+}
+.shop {
+    @include e(cart) {
+        display: flex;
+        letter-spacing: 2px;
+    }
+    @include e(cost) {
+        display: inline-block;
+    }
+}
+.tools {
+    @include e(item) {
+        display: inline-block;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+}
+.shop {
+    
+        @include e(item) {
+            padding: 0.5rem;
+            font-size: 1.2rem;
+        }
+        @include e(number) {
+            font-size: 14px;
+            line-height: 1rem;
+            
+        }
+    
+}

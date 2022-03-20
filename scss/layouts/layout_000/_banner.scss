@@ -1,0 +1,73 @@
+.banner {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+  @include e(wrapper) {
+      padding: 7rem 1rem 12rem;
+    position: relative;
+    
+    @include m(first) {
+        background: url(../../../img/banner/slider-colored-fashion-9-1.jpg) no-repeat;
+        background-position-x: center;
+    background-size: cover;
+    }
+    @include m(second) {
+        background: url(../../../img/banner/slider-colored-fashion-9.jpg) no-repeat;
+        background-position-x: center;
+        background-size: cover;
+        display: none;
+    }
+    @include m (third) {
+background: url(../../../img/banner/slider-colored-fashion-7.jpg);
+        background-position-x: center;
+        background-size: cover;
+        display: none;
+    }
+  }
+  @include e(button) {
+      display: none;
+  }
+  @include e(text) {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    //   padding: 1rem 0 15rem;
+  }
+  @include e(header) {
+      
+    font-size: 95px;
+      margin: 0;
+      text-transform: uppercase;
+      color: $white;
+      line-height: auto;
+  }
+  @include e(paragraph) {
+      font-size: 13px;
+      line-height: 1.5rem;
+      margin-top: 0;
+      color: $white;
+  }
+
+}
+
+.actions {
+    @include e(button) {
+        text-transform: uppercase;
+        border: solid 2px $white;
+        font-family: $cabinFontFamily;
+        font-size: 11px;
+        padding: 0.7rem 1.5rem;
+        font-weight: 700;
+        margin-left: 10px;
+        margin-right: 10px;
+        @include m(white) {
+            background-color: $white;
+            color: $black;
+        }
+        @include m(opacity) {
+            background-color:rgba(0, 0, 0, 0);
+            color: $white;
+        }
+    }
+
+}

@@ -1,0 +1,17 @@
+.footer {
+    @include e(menu)  {
+        grid-template-areas: 
+        "adress posts menu1 menu2 menu3 "
+        ;
+    }
+    @include e(submenu) {
+        &:last-of-type {
+            justify-self: initial;
+        }
+    }
+    @include e(submenu-menu) {
+        @include m(first) {
+            padding-left: 20px;
+        }
+    }
+}
