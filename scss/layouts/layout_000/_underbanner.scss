@@ -16,15 +16,15 @@
         text-align: center;
 
         @include m(first) {
-            background: url(../../../img/underbanner/cat-colored-fashion-7.jpg.webp) no-repeat;
+            background: url(../img/underbanner/cat-colored-fashion-7.jpg.webp) no-repeat;
             background-size: cover;
         }
         @include m(second) {
-            background: url(../../../img/underbanner/cat-colored-fashion-14.jpg.webp) no-repeat;
+            background: url(../img/underbanner/cat-colored-fashion-14.jpg.webp) no-repeat;
             background-size: cover;
         }
         @include m(third) {
-            background: url(../../../img/underbanner/cat-colored-fashion-10.jpg.webp) no-repeat;
+            background: url(../img/underbanner/cat-colored-fashion-10.jpg.webp) no-repeat;
             background-size: cover;
         }
     }

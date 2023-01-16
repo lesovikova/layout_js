@@ -53,8 +53,12 @@
   width: 100%;
   height: auto;
 }
- 
-@mixin fontSize($bfs) {
-font-size: clamp(#{$bfs}, #{$bfs} + 1.1vw, #{$bfs} * 3);
-}
+      
+      // Makes font size not less than prompted and not more than prompted times 3
+
+
+      
+      @mixin fontSize($bfs) {
+      font-size: clamp(#{$bfs}, #{$bfs} + 1.1vw, #{$bfs} * 3);
+      }
 

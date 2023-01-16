@@ -7,18 +7,18 @@
     position: relative;
     
     @include m(first) {
-        background: url(../../../img/banner/slider-colored-fashion-9-1.jpg) no-repeat;
+        background: url(../img/banner/slider-colored-fashion-9-1.jpg) no-repeat;
         background-position-x: center;
     background-size: cover;
     }
     @include m(second) {
-        background: url(../../../img/banner/slider-colored-fashion-9.jpg) no-repeat;
+        background: url(../img/banner/slider-colored-fashion-9.jpg) no-repeat;
         background-position-x: center;
         background-size: cover;
         display: none;
     }
     @include m (third) {
-background: url(../../../img/banner/slider-colored-fashion-7.jpg);
+background: url(../img/banner/slider-colored-fashion-7.jpg);
         background-position-x: center;
         background-size: cover;
         display: none;
